@@ -6,6 +6,20 @@ A production-ready example of integrating Spotify's API with Next.js, demonstrat
 
 Check out the live example: [nextjs-spotify-auth-example.vercel.app](https://nextjs-spotify-auth-example.vercel.app/)
 
+## 📑 Table of Contents
+- 🎯 [Key Features](#-key-features)
+- 🤔 [Why This Project?](#-why-this-project)
+- 🏗️ [Project Structure](#️-project-structure)
+- 🚀 [Getting Started](#-getting-started)
+- ⚙️ [Environment Variables](#️-environment-variables)
+- 🔒 [Security Features](#-security-features)
+- 🛠️ [Implementation Details](#️-implementation-details)
+  - [Authentication Flow](#authentication-flow)
+  - [State Management](#state-management)
+- 📚 [Key Differences from Other Examples](#-key-differences-from-other-examples)
+- 🤝 [Contributing](#-contributing)
+- 📝 [License](#-license)
+
 ## 🎯 Key Features
 
 - Complete Spotify OAuth flow implementation using PKCE
@@ -44,12 +58,16 @@ app/
 ## 🚀 Getting Started
 
 1. Clone this repository
-2. Copy `.env.example` to `.env.local` and fill in your Spotify API credentials
-3. Install dependencies:
+2. Set up your Spotify Application:
+   - Follow the [Spotify Web API documentation](https://developer.spotify.com/documentation/web-api) to create and configure your application
+   - Add `http://localhost:3000` to your Redirect URIs in the app settings
+   - Note down your Client ID and Client Secret
+3. Copy `.env.example` to `.env.local` and fill in your Spotify API credentials
+4. Install dependencies:
    ```bash
    npm install
    ```
-4. Run the development server:
+5. Run the development server:
    ```bash
    npm run dev
    ```
@@ -57,9 +75,12 @@ app/
 ## ⚙️ Environment Variables
 
 ```env
+# Development: http://localhost:3000
+# Production: https://your-domain.com
+SPOTIFY_REDIRECT_URI=
+
 SPOTIFY_CLIENT_ID=your_client_id
 SPOTIFY_CLIENT_SECRET=your_client_secret
-SPOTIFY_REDIRECT_URI=http://localhost:3000/api/spotify/auth/callback
 ```
 
 ## 🔒 Security Features
