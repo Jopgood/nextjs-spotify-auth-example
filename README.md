@@ -2,6 +2,10 @@
 
 A production-ready example of integrating Spotify's API with Next.js, demonstrating secure authentication flow and state management without relying on next-auth. This project showcases how to implement a "Connect with Spotify" feature rather than using Spotify as a primary authentication provider.
 
+## 🌐 Live Demo
+
+Check out the live example: [nextjs-spotify-auth-example.vercel.app](https://nextjs-spotify-auth-example.vercel.app/)
+
 ## 🎯 Key Features
 
 - Complete Spotify OAuth flow implementation using PKCE
