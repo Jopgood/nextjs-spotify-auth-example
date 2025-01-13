@@ -4,7 +4,7 @@ A production-ready example of integrating Spotify's API with Next.js, demonstrat
 
 ## 🌐 Live Demo
 
-Check out the live example: [nextjs-spotify-auth-example.vercel.app](https://nextjs-spotify-auth-example.vercel.app/)
+Check out the live example: Coming Soon!
 
 ## 📑 Table of Contents
 - 🎯 [Key Features](#-key-features)
